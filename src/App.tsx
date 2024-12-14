@@ -87,10 +87,12 @@ function App() {
               >
                 <h1>{l.title}</h1>
               </a>
-              <BsThreeDotsVertical
-                className="absolute right-2 top-[25px] text-dots cursor-pointer"
+              <div
                 onClick={() => handleShare(l.link)}
-              />
+                className="absolute right-2 z-50 top-0 text-dots cursor-pointer w-10 h-full flex items-center justify-center"
+              >
+                <BsThreeDotsVertical />
+              </div>
             </div>
           ))}
         </div>
